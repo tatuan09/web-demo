@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ | GrayZone Basketball</title>
+    <link rel="stylesheet" href="/Static/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">⚡GRAY<span>ZONE</span></a>
+            <div class="nav-links">
+                <a href="index.html">Trang chủ</a>
+                <a href="coaches.html">HLV</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="schedule.html">Lịch học</a>
+                <a href="contact.html" class="active">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="page-header">
+            <h1>Liên hệ với chúng tôi</h1>
+            <p class="subtitle">Đăng ký học thử hoặc nhận tư vấn miễn phí</p>
+        </div>
+
+        <!-- Contact Grid: Thông tin + Form -->
+        <div class="contact-grid">
+            <!-- Thông tin liên hệ -->
+            <div class="contact-info">
+                <h2 style="font-size: 24px; margin-bottom: 24px; color: #111827;">Thông tin liên hệ</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-content">
+                        <h3>Địa chỉ sân</h3>
+                        <p>126 Nguyễn Văn Linh, Q.Hải Châu, Đà Nẵng<br>(Sân thi đấu trong nhà)</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-content">
+                        <h3>Hotline</h3>
+                        <p>0981 234 567</p>
+                        <p style="font-size: 12px; color: #9ca3af;">(8:00 - 21:00 tất cả các ngày)</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>hoops@grayzone.vn</p>
+                        <p>info@grayzonebasketball.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">⏰</div>
+                    <div class="info-content">
+                        <h3>Giờ làm việc</h3>
+                        <p>Thứ 2 - Thứ 6: 8:00 - 21:00</p>
+                        <p>Thứ 7 - Chủ nhật: 7:00 - 22:00</p>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div style="margin-top: 30px;">
+                    <h3 style="font-size: 16px; margin-bottom: 15px; color: #374151;">Kết nối với chúng tôi</h3>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="background: #f3f4f6; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: #374151; font-size: 20px;">📘</a>
+                        <a href="#" style="background: #f3f4f6; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: #374151; font-size: 20px;">📷</a>
+                        <a href="#" style="background: #f3f4f6; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: #374151; font-size: 20px;">🎥</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form liên hệ -->
+            <div class="contact-form">
+                <h2 style="font-size: 24px; margin-bottom: 24px; color: #111827;">Gửi thông tin đăng ký</h2>
+                
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Họ và tên <span style="color: #ef4444;">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Nhập họ tên của bạn">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span style="color: #ef4444;">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại <span style="color: #ef4444;">*</span></label>
+                        <input type="tel" id="phone" name="phone" required placeholder="0981 234 567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="class">Lớp quan tâm</label>
+                        <select id="class" name="class">
+                            <option value="">-- Chọn lớp --</option>
+                            <option value="U8-U10">U8 - U10 (Làm quen)</option>
+                            <option value="U12-U15">U12 - U15 (Phát triển)</option>
+                            <option value="U18">U18 nâng cao</option>
+                            <option value="adult">Lớp người lớn</option>
+                            <option value="private">Kèm riêng 1-1</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Ghi chú</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Bạn muốn học thử hay cần tư vấn thêm?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn">Gửi đăng ký</button>
+                    </div>
+
+                    <p style="font-size: 12px; color: #9ca3af; margin-top: 10px;">
+                        * Thông tin của bạn sẽ được bảo mật. Chúng tôi sẽ liên hệ trong vòng 24h.
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bản đồ -->
+        <div style="margin: 50px 0;">
+            <h2 style="font-size: 24px; margin-bottom: 20px; color: #111827;">Vị trí sân đấu</h2>
+            <div style="background: #e5e7eb; height: 350px; border-radius: 16px; overflow: hidden; border: 1px solid #d1d5db;">
+                <!-- Google Maps iframe (thay bằng iframe thật của bạn) -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.273116624404!2d108.218828!3d16.060691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c4e1b5c4e5%3A0x8c6b3b6f8c9b5a3!2zxJDhuqFpIGjhu41jIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1635948400000!5m2!1svi!2s"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <p style="text-align: center; margin-top: 15px; color: #6b7280; font-size: 14px;">
+                <strong>Chỉ đường:</strong> 126 Nguyễn Văn Linh, Quận Hải Châu, Đà Nẵng (Cạnh trường Đại học Ngoại ngữ)
+            </p>
+        </div>
+
+        <!-- FAQ nhanh -->
+        <div style="background: white; border-radius: 16px; padding: 30px; margin: 40px 0; border: 1px solid #e5e7eb;">
+            <h2 style="font-size: 24px; margin-bottom: 20px;">Câu hỏi thường gặp</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                <div>
+                    <h3 style="font-size: 16px; margin-bottom: 8px; color: #111827;">❓ Học phí như thế nào?</h3>
+                    <p style="color: #6b7280; font-size: 14px;">Vui lòng liên hệ qua hotline để nhận bảng giá chi tiết theo từng lớp.</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 16px; margin-bottom: 8px; color: #111827;">❓ Có lớp học thử không?</h3>
+                    <p style="color: #6b7280; font-size: 14px;">Có, bạn có thể đăng ký học thử 1 buổi miễn phí qua form trên.</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 16px; margin-bottom: 8px; color: #111827;">❓ Cần chuẩn bị gì khi đi học?</h3>
+                    <p style="color: #6b7280; font-size: 14px;">Giày thể thao, quần áo thoải mái, nước uống cá nhân.</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 16px; margin-bottom: 8px; color: #111827;">❓ Có chỗ gửi xe không?</h3>
+                    <p style="color: #6b7280; font-size: 14px;">Có bãi giữ xe rộng rãi, miễn phí cho học viên.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">⚡GRAY<span>ZONE</span></div>
+                <p>© 2025 Lớp bóng rổ Gen3. Liên hệ để trải nghiệm.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript xử lý form -->
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Lấy dữ liệu từ form
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                class: document.getElementById('class').value,
+                message: document.getElementById('message').value
+            };
+
+            // Validate đơn giản
+            if (!formData.name || !formData.email || !formData.phone) {
+                alert('Vui lòng điền đầy đủ thông tin bắt buộc!');
+                return;
+            }
+
+            // Giả lập gửi thành công
+            alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ trong thời gian sớm nhất.');
+            
+            // Reset form
+            document.getElementById('contactForm').reset();
+            
+            // Ở đây bạn có thể gửi dữ liệu lên server thật
+            console.log('Form data:', formData);
+        }
+    </script>
+</body>
+</html>
